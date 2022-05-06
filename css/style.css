@@ -23,6 +23,12 @@
 	min-width: 600px;
 }
 
+
+.xxx {
+background-color: chartreuse;
+
+}
+
 .direita {
 	display: flex;
 	flex-direction: column;
@@ -207,4 +213,17 @@ button {
 	background: #0A3871;
 
 	/* Inside auto layout */
+}
+
+footer {
+	font-family: 'Inter', sans-serif;
+	background-color: #343A40;
+	color: white;
+	padding: 10px;
+	font-size: 12px;
+	text-align: center;
+	flex: none;
+	order: 2;
+	flex-grow: 0;
+	margin: 0px;
 }
