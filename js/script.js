@@ -74,6 +74,16 @@ botaoDescriptografar.addEventListener("click", function () {
     }
 });
 
+var botaoCopiar = document.querySelector('.copiar');
+botaoCopiar.addEventListener("click", function () {
+
+    let textoCopiado = document.querySelector('.outText');
+    textoCopiado.select();
+    textoCopiado.setSelectionRange(0, 99999)
+    navigator.clipboard.writeText(textoCopiado.value);
+    alert("Texto copiado com sucesso!");
+});
+
 inputTexto.addEventListener("keyup", function () {
     const texto = inputTexto.value;
     if (texto.length == 0) {
