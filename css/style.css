@@ -22,13 +22,10 @@
 	min-width: 600px;
 }
 
-
 .escondido  {
 display: none;
 }
-.inactive {
-visibility: hidden;
-}
+
 .direita {
 	display: flex;
 	flex-direction: column;
