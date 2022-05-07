@@ -8,7 +8,7 @@ function btnEncriptar() {
 }
 
 function encriptar(texto) {
-    let textoEncriptado = [["a","ai"],["e","enter"],["i","imes"],["o","ober"],["u","ufat"]];
+    let textoEncriptado = [["a", "ai"], ["e", "enter"], ["i", "imes"], ["o", "ober"], ["u", "ufat"]];
     let textoEncriptadoFinal = "";
     for (let i = 0; i < texto.length; i++) {
         for (let j = 0; j < textoEncriptado.length; j++) {
@@ -20,6 +20,18 @@ function encriptar(texto) {
 
     return textoEncriptado;
 }
+
+
+var botaoCriptografar = document.querySelector('.criptografar');
+
+botaoCriptografar.addEventListener("click", function () {
+    document.querySelector('.resultado-imagem').classList.toggle('escondido');
+    document.querySelector('.direita').style.justifyContent = 'end';
+    document.querySelector('.resultado').classList.toggle('escondido');
+
+    console.log("Buscando pacientes...");
+
+});
 
 
 
