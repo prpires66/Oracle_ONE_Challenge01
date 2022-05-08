@@ -81,7 +81,6 @@ botaoCopiar.addEventListener("click", function () {
     textoCopiado.select();
     textoCopiado.setSelectionRange(0, 99999)
     navigator.clipboard.writeText(textoCopiado.value);
-    alert("Texto copiado com sucesso!");
 });
 
 inputTexto.addEventListener("keyup", function () {
